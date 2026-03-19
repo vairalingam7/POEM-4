@@ -74,13 +74,7 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
-<img src="lion.jpg">
-<img src="tiger.jpg">
-<img src="leopard.jpg">
-<img src="bear.jpg">
-<img src="crocodile.jpg">
-<img src="hyena.jpg">
-<img src="chameleon.jpg">
+
 /* Button */
 button {
     padding: 10px 15px;
@@ -128,37 +122,37 @@ button:hover {
     <div class="mindmap">
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?lion">
+            <img src="lion.jpg">
             🦁 Lion<br>Roars loudly
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?tiger">
+            <img src="tiger.jpg">
             🐯 Tiger<br>Stripes & danger
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?leopard">
+            <img src="leopard.jpg">
             🐆 Leopard<br>Spots & attack
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?bear">
+            <img src="bear.jpg">
             🐻 Bear<br>Deadly hug
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?crocodile">
+            <img src="crocodile.jpg">
             🐊 Crocodile<br>Tears
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?hyena">
+            <img src="hyena.jpg">
             😂 Hyena<br>Laughs
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?chameleon">
+            <img src="chameleon.jpg">
             🦎 Chameleon<br>Color change
         </div>
 
