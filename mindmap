@@ -10,16 +10,14 @@ body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(-45deg, #74ebd5, #ACB6E5, #ff9a9e, #fad0c4);
     background-size: 400% 400%;
-    animation: bgMove 10s infinite alternate;
+    animation: bg 10s infinite alternate;
 }
 
-/* Background animation */
-@keyframes bgMove {
+@keyframes bg {
     0% {background-position: left;}
     100% {background-position: right;}
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 20px;
@@ -27,7 +25,6 @@ header {
     background: rgba(0,0,0,0.6);
 }
 
-/* Section */
 .section {
     background: white;
     margin: 20px auto;
@@ -35,16 +32,14 @@ header {
     width: 85%;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    animation: fadeIn 1s ease-in;
+    animation: fade 1s;
 }
 
-/* Fade animation */
-@keyframes fadeIn {
+@keyframes fade {
     from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
+    to {opacity: 1;}
 }
 
-/* Mindmap */
 .mindmap {
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +50,7 @@ header {
     background: #0984e3;
     color: white;
     margin: 15px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
     width: 180px;
     text-align: center;
@@ -63,36 +58,32 @@ header {
 }
 
 .node:hover {
-    transform: scale(1.1) rotate(2deg);
+    transform: scale(1.1);
     background: #6c5ce7;
 }
 
-/* Images */
 .node img {
     width: 100%;
-    height: 100px;
-    object-fit: cover;
+    height: 110px;
     border-radius: 10px;
+    object-fit: cover;
 }
-<img src="lion.jpg">
-<img src="tiger.jpg">
-<img src="leopard.jpg">
-<img src="bear.jpg">
-<img src="crocodile.jpg">
-<img src="hyena.jpg">
-<img src="chameleon.jpg">
+
+/* Music player */
+audio {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
 /* Button */
 button {
-    padding: 10px 15px;
-    border: none;
+    padding: 10px;
     background: #00b894;
+    border: none;
     color: white;
     border-radius: 8px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #019875;
 }
 
 .hidden {
@@ -104,8 +95,8 @@ button:hover {
 <body>
 
 <!-- 🎵 Background Music -->
-<audio autoplay loop>
-    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+<audio controls autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
 </audio>
 
 <header>
@@ -122,43 +113,43 @@ button:hover {
     </p>
 </div>
 
-<!-- Mindmap with Images -->
+<!-- Mindmap -->
 <div class="section">
     <h2>🧠 Mind Map</h2>
     <div class="mindmap">
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?lion">
+            <img src="lion.jpg">
             🦁 Lion<br>Roars loudly
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?tiger">
+            <img src="tiger.jpg">
             🐯 Tiger<br>Stripes & danger
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?leopard">
+            <img src="leopard.jpg">
             🐆 Leopard<br>Spots & attack
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?bear">
+            <img src="bear.jpg">
             🐻 Bear<br>Deadly hug
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?crocodile">
+            <img src="crocodile.jpg">
             🐊 Crocodile<br>Tears
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?hyena">
+            <img src="hyena.jpg">
             😂 Hyena<br>Laughs
         </div>
 
         <div class="node">
-            <img src="https://source.unsplash.com/200x200/?chameleon">
+            <img src="chameleon.jpg">
             🦎 Chameleon<br>Color change
         </div>
 
@@ -185,12 +176,12 @@ button:hover {
     </ul>
 </div>
 
-<!-- Interactive -->
+<!-- Fun Fact -->
 <div class="section">
     <h2>✨ Fun Fact</h2>
     <button onclick="showFact()">Click Me</button>
     <p id="fact" class="hidden">
-        You identify animals only after they attack 😄 (funny but dangerous!)
+        Animals are identified only after dangerous encounters 😄
     </p>
 </div>
 
