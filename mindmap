@@ -74,7 +74,13 @@ header {
     object-fit: cover;
     border-radius: 10px;
 }
-
+<img src="lion.jpg">
+<img src="tiger.jpg">
+<img src="leopard.jpg">
+<img src="bear.jpg">
+<img src="crocodile.jpg">
+<img src="hyena.jpg">
+<img src="chameleon.jpg">
 /* Button */
 button {
     padding: 10px 15px;
